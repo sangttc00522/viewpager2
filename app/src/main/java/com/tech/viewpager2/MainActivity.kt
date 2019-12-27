@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         viewpager.orientation = ViewPager2.ORIENTATION_VERTICAL
         viewpager.adapter = adapter
 //        viewpager.setPageTransformer()
+
         TabLayoutMediator(tabLayout, viewpager) { tab, position ->
             tab.setText("Tab $position")
             viewpager.setCurrentItem(tab.position, true)
