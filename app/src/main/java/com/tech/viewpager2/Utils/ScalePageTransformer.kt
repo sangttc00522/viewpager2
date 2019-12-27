@@ -1,10 +1,7 @@
-package com.tech.viewpager2
+package com.tech.viewpager2.Utils
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2
-
-private const val MIN_SCALE = 0.85f
-private const val MIN_ALPHA = 0.5f
 
 class ScalePageTransformer : ViewPager2.PageTransformer {
 

@@ -1,13 +1,15 @@
-package com.tech.viewpager2
+package com.tech.viewpager2.Views
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.tech.viewpager2.R
+import com.tech.viewpager2.Utils.EXTRA_MESSAGE
 
 
-class demoFragment : Fragment() {
+class DemoFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,12 +21,10 @@ class demoFragment : Fragment() {
 
 
     companion object {
-        val EXTRA_MESSAGE = "EXTRA_MESSAGE"
-
-        fun newInstance(paramString: String): demoFragment {
-            val f = demoFragment()
+        fun newInstance(paramString: String): DemoFragment {
+            val f = DemoFragment()
             val localBundle = Bundle(1)
-            localBundle.putString("EXTRA_MESSAGE", paramString)
+            localBundle.putString(EXTRA_MESSAGE, paramString)
             f.setArguments(localBundle)
             return f
         }
